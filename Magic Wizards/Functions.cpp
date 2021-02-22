@@ -79,3 +79,144 @@ void art()
     cout << endl;
     cout << "                              Welcome " << playerName << "!";
 }
+
+bool isNumber(string s)
+{
+    for (int i = 0; i < s.length(); i++)
+    {
+        if (isdigit(s[i]) == false)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+}
+
+bool isNumber(string s)
+{
+    for (int i = 0; i < s.length(); i++)
+    {
+        if (isdigit(s[i]) == false)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+}
+
+void level1()
+{
+    string str;
+    cout << "         ,%                                                 %*               " << endl;
+    cout << "        @@@                                               *@@,           ,@@@" << endl;
+    cout << "       @@@.           (@@@@@    #@%     %@#    %@@@@%    .@@#        @@@@/@@/" << endl;
+    cout << "      &@@,         @@@.   %@@*  @@&   *@@.  @@@    @@@   @@@            .@@# " << endl;
+    cout << "     %@@(         @@@@@@@@@@@   @@& .@@,  .@@@@@@@@@@#  @@@             @@& " << endl;
+    cout << "    /@@%         %@@      %(    @@@@@#    @@@     .%,  @@@             @@@ " << endl;
+    cout << "    @@@@@@@@@@&   @@@@@@@@      #@@&       @@@@@@@%   %@@             @@@ " << endl;
+    cout << endl;
+    cout << endl;
+    cout << "Stringgar:" << endl;
+    cout << endl;
+    cout << "=====================================================================" << endl;
+    cout << "Okay, " << " let's start." << endl;
+    cout << "Strings are objects that represent sequences of characters." << endl;
+    cout << "The standard string class provides support for such objects with an interface similar to that of a standard container of bytes," << endl;
+    cout << "but adding features specifically designed to operate with strings of single-byte characters." << endl;
+    cout << "To be able to use anything related to strings, you have to include the string library. You can do that, by typing #include<string> above using namespace std;" << endl;
+    cout << "To declare a string you basically have to type string and the name of your variable." << endl;
+    cout << "And to initalize it, you have to type getline(cin, the name of the string). Okay let's try it." << endl;
+    cout << "=====================================================================" << endl;
+    cout << "Ivan:" << endl;
+    getline(cin, str);
+    cout << "Stringgar:" << endl;
+    cout << "=====================================================================" << endl;
+    if (isNumber(str) == 0)
+    {
+        cout << "Good job, let's countinue to the next level." << endl;
+    }
+    else
+    {
+        cout << "Try again!" << endl;
+    }
+    cout << "=====================================================================" << endl;
+}
+
+void level2()
+{
+    cout << "         ,%                                                 %*               ,@@@@@@@&" << endl;
+    cout << "        @@@                                               *@@,              %@@.    @@@" << endl;
+    cout << "       @@@.           (@@@@@    #@%     %@#    %@@@@%    .@@#                      @@@" << endl;
+    cout << "      &@@,         @@@.   %@@*  @@&   *@@.  @@@    @@@   @@@                   /@@@( " << endl;
+    cout << "     %@@(         @@@@@@@@@@@   @@& .@@,  .@@@@@@@@@@#  @@@                 @@@%  " << endl;
+    cout << "    /@@%         %@@      %(    @@@@@#    @@@     .%,  @@@               @@@@######.   " << endl;
+    cout << "    @@@@@@@@@@&   @@@@@@@@      #@@&       @@@@@@@%   %@@                *********," << endl;
+    cout << endl;
+    cout << endl;
+    cout << "Stringgar:" << endl;
+    cout << endl;
+    cout << "    =====================================================================" << endl;
+    cout << endl;
+    cout << "    =====================================================================" << endl;
+}
+
+void level3()
+{
+    cout << "          ,%                                                   %*           .,." << endl;
+    cout << "         @@@                                                 *@@,       .@@&. (@@@" << endl;
+    cout << "        @@@.            (@@@@@    #@%     %@#    %@@@@%     .@@#        &,    (@@*" << endl;
+    cout << "       &@@,          @@@.   %@@*  @@&   *@@.  @@@    @@@    @@@          &@@@@@" << endl;
+    cout << "      %@@(          @@@@@@@@@@@   @@& .@@,  .@@@@@@@@@@#   @@@               @@@." << endl;
+    cout << "     /@@%          %@@      %(    @@&@@&    @@@@@#        @@@         #@@     (@@/" << endl;
+    cout << "     @@@@@@@@@@&    @@@@@@@@      #@@&       @@@@@@@%    %@@            @@@@@@@@" << endl;
+    cout << endl;
+    cout << endl;
+    cout << "Stringgar:" << endl;
+    cout << endl;
+    cout << "    =====================================================================" << endl;
+    cout << endl;
+    cout << "    =====================================================================" << endl;
+}
+
+void level4()
+{
+    cout << "          ,%                                                   %*           .@@&" << endl;
+    cout << "         @@@                                                 *@@,         @@@@@" << endl;
+    cout << "        @@@.            (@@@@@    #@%     %@#    %@@@@%     .@@#        %@@ (@@" << endl;
+    cout << "       &@@,          @@@.   %@@*  @@&   *@@.  @@@    @@@    @@@      (@@   ,@@," << endl;
+    cout << "      %@@(          @@@@@@@@@@@   @@& .@@,  .@@@@@@@@@@#   @@@     @@@@@@@@@@@@&" << endl;
+    cout << "     /@@%          %@@      %(    @@&@@&    @@@@@#        @@@            @@%" << endl;
+    cout << "     @@@@@@@@@@&    @@@@@@@@      #@@&       @@@@@@@%    %@@            *@," << endl;
+    cout << endl;
+    cout << endl;
+    cout << "Stringgar:" << endl;
+    cout << endl;
+    cout << "    =====================================================================" << endl;
+    cout << endl;
+    cout << "    =====================================================================" << endl;
+}
+
+void level5()
+{
+    cout << "         ,%                                                 %*               @@@@@@@@#" << endl;
+    cout << "        @@@                                               *@@,             (@@" << endl;
+    cout << "       @@@.           (@@@@@    #@%     %@#    %@@@@%    .@@#             @@@@@@@@&" << endl;
+    cout << "      &@@,         @@@.   %@@*  @@&   *@@.  @@@    @@@   @@@            .        %@@. " << endl;
+    cout << "     %@@(         @@@@@@@@@@@   @@& .@@,  .@@@@@@@@@@#  @@@             @@,    /@@," << endl;
+    cout << "    /@@%         %@@      %(    @@@@@#    @@@     .%,  @@@             @@,    /@@," << endl;
+    cout << "    @@@@@@@@@@&   @@@@@@@@      #@@&       @@@@@@@%   %@@               @@@@@@@@    " << endl;
+    cout << endl;
+    cout << endl;
+    cout << "Stringgar:" << endl;
+    cout << endl;
+    cout << "    =====================================================================" << endl;
+    cout << endl;
+    cout << "    =====================================================================" << endl;
+}
+
