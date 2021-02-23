@@ -80,20 +80,7 @@ void art()
     cout << "                              Welcome " << playerName << "!";
 }
 
-bool isNumber(string s)
-{
-    for (int i = 0; i < s.length(); i++)
-    {
-        if (isdigit(s[i]) == false)
-        {
-            return false;
-        }
-        else
-        {
-            return true;
-        }
-    }
-}
+// ------------------------------- Main Menu ------------------------------- //
 
 bool isNumber(string s)
 {
@@ -112,6 +99,7 @@ bool isNumber(string s)
 
 void level1()
 {
+    system("CLS");
     string str;
     cout << "         ,%                                                 %*               " << endl;
     cout << "        @@@                                               *@@,           ,@@@" << endl;
@@ -140,6 +128,7 @@ void level1()
     if (isNumber(str) == 0)
     {
         cout << "Good job, let's countinue to the next level." << endl;
+        system("CLS");
     }
     else
     {
