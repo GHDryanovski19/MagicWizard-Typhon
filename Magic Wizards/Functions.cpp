@@ -201,13 +201,13 @@ void level3()
     cout << endl;
     cout << "Stringgar:" << endl;
     cout << endl;
-    cout << "    =====================================================================" << endl;
+    cout << "=====================================================================" << endl;
     cout << playerName << " you are doing pretty well!" << endl;
     cout << "This level is all about finding a string in another string. I don't think that it would be a challenge for you." << endl;
     cout << "Strings can do this for us.They can search for a substring or for a single character.For this purpose, we need to use one of the variants of" << endl;
     cout << "the find member function.Two of them are particularly useful : int where_it_begins = S.find(another_string, start_here); int where_it_is = S.find(any_character, start_here);" << endl;
     cout << "Your task is to initialize two strings and check if the second is a part of the first" << endl;
-    cout << "    =====================================================================" << endl;
+    cout << "=====================================================================" << endl;
     cout << playerName << ":" << endl;
     getline(cin, str1);
     getline(cin, str2);
@@ -235,9 +235,17 @@ void level4()
     cout << endl;
     cout << "Stringgar:" << endl;
     cout << endl;
-    cout << "    =====================================================================" << endl;
-    cout << endl;
-    cout << "    =====================================================================" << endl;
+    cout << "=====================================================================" << endl;
+    cout << playerName << " you learn stuff with amazing speed!" << endl;
+    cout << "This level is about the length of a string." << endl;
+    cout << "Every string has a length.Even an empty string(containing no characters at all)" << endl;
+    cout << "has a length of zero.It's obvious that at some point we may want to know how long a particular string is." << endl;
+    cout << "This information is provided by two twin member functions.Their names are different, but their behaviours are identical.We can say that these functions are synonyms." << endl;
+    cout << "Their informal prototypes look like these:" << endl;
+    cout << "int string_size = S.size();" << endl;
+    cout << "int string_length = S.length();" << endl;
+
+    cout << "=====================================================================" << endl;
 }
 
 void level5()
@@ -253,8 +261,14 @@ void level5()
     cout << endl;
     cout << "Stringgar:" << endl;
     cout << endl;
-    cout << "    =====================================================================" << endl;
-    cout << endl;
-    cout << "    =====================================================================" << endl;
+    cout << "=====================================================================" << endl;
+    cout << "Wow " << playerName << " you're learning pretty fast. Amazing job!" << endl;
+    cout << "This level is about string::npos. I think it will be a piece of cake, so let't start." << endl;
+    cout << "String::npos is the maximum value for size_t" << endl;
+    cout << "npos is a static member constant value with the greatest possible value for an element of type size_t." << endl;
+    cout << "This value, when used as the value for a len(or sublen) parameter in string's member functions, means until the end of the string." << endl;
+    cout << "As a return value, it is usually used to indicate no matches." << endl;
+    cout << "This constant is defined with a value of - 1, which because size_t is an unsigned integral type, it is the largest possible representable value for this type." << endl;
+    cout << "=====================================================================" << endl;
 }
 
