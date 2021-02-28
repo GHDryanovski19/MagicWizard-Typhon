@@ -101,6 +101,7 @@ void art()
 
 // ------------------------------- Main Menu ------------------------------- //
 
+//Checks if a variable is an integer or string
 bool isNumber(string s)
 {
     for (int i = 0; i < s.length(); i++)
@@ -213,8 +214,7 @@ void level2()
     {
 
         system("CLS");
-        string str1;
-        string str2;
+        string answer;
         cout << "         ,%                                                 %*               ,@@@@@@@&" << endl;
         cout << "        @@@                                               *@@,              %@@.    @@@" << endl;
         cout << "       @@@.           (@@@@@    #@%     %@#    %@@@@%    .@@#                      @@@" << endl;
@@ -226,35 +226,30 @@ void level2()
         cout << endl;
         cout << "Stringgar:" << endl;
         cout << endl;
-        cout << "=====================================================================" << endl;
+        cout << "=====================================================================" << endl; Sleep(1000);
         cout << "Okay, " << playerName << " let's continue with your journey." << endl;
-        cout << "Since you already know the basics of strings, we can start with some more advanced stuff." << endl;
-        cout << "This level is about comparing strings." << endl;
-        cout << "You can compare strings by using the basic comparing operators > < >= <= !=. But we are magicians, right!" << endl;
-        cout << "We are going to use a method(member function)." << endl;
-        cout << "If we want a particular method (member function) to process data embedded within an object, we activate the member function for the object." << endl;
-        cout << "It looks like this: object.member_function();" << endl;
-        cout << "We compare strings by using the function .compare()." << endl;
-        cout << "For an example we've initialized a string named str1 and we want to compare it with a string named str2" << endl;
-        cout << "str1.compare(str2) == 0       when str1 == str2" << endl;
-        cout << "str1.compare(str2) > 0        when str1 > str2" << endl;
-        cout << "str1.compare(str2) < 0        when str1 < str2" << endl;
-        cout << "I want you to initialize two strings and you'll compare them." << endl;
-        cout << "=====================================================================" << endl;
+        cout << "Since you already know the basics of strings, we can start with some more advanced stuff." << endl; Sleep(1000);
+        cout << "This level is about the function insert()" << endl; Sleep(300);
+        cout << "This function is used to insert a new character, before the character indicated by the position pos." << endl; Sleep(1000);
+        cout << "Syntax:" << endl; Sleep(700);
+        cout << "Consider two strings str1and str2, pos is the positon.Syntax would be :" << endl; Sleep(1000);
+        cout << "str1.insert(pos, str2);" << endl; Sleep(300);
+        cout << "Parameters:" << endl; Sleep(300);
+        cout << "str : String object to be inserted in another string object." << endl; Sleep(500);
+        cout << "pos : It defines the position at which new content is inserted just before the specified position." << endl; Sleep(700);
+        cout << "Your task is to write the syntax of a member function that will insert the word magic after the 3rd index of a word" << endl; Sleep(700);
+        cout << "=====================================================================" << endl; Sleep(1000);
         cout << playerName << ":" << endl;
-        getline(cin, str1);
-        getline(cin, str2);
-        if (str1.compare(str2) == 0)
+        getline(cin, answer);
+        if (isNumber(answer) == 0 && answer.find("string") != string::npos && answer.find(';') != string::npos && answer.find(".insert(3, \"magic\")") != string::npos)
         {
-            cout << str1 << " (str1) == " << str2 << " (str2)" << endl;
-        }
-        else if (str1.compare(str2) > 0)
-        {
-            cout << str1 << " (str1) > " << str2 << " (str2)" << endl;
+            ready();
         }
         else
         {
-            cout << str1 << " (str1) < " << str2 << " (str2)" << endl;
+            cout << "Try again!" << endl; Sleep(2000);
+            system("CLS");
+            level2();
         }
     }
     else
@@ -270,7 +265,6 @@ void level3()
 
         system("CLS");
         string str1;
-        string str2;
         cout << "          ,%                                                   %*           .,." << endl;
         cout << "         @@@                                                 *@@,       .@@&. (@@@" << endl;
         cout << "        @@@.            (@@@@@    #@%     %@#    %@@@@%     .@@#        &,    (@@*" << endl;
@@ -282,24 +276,27 @@ void level3()
         cout << endl;
         cout << "Stringgar:" << endl;
         cout << endl;
-        cout << "=====================================================================" << endl;
+        cout << "=====================================================================" << endl; Sleep(1000);
         cout << playerName << " you are doing pretty well!" << endl;
-        cout << "This level is all about finding a string in another string. I don't think that it would be a challenge for you." << endl;
-        cout << "Strings can do this for us.They can search for a substring or for a single character.For this purpose, we need to use one of the variants of" << endl;
-        cout << "the find member function.Two of them are particularly useful : int where_it_begins = S.find(another_string, start_here); int where_it_is = S.find(any_character, start_here);" << endl;
-        cout << "Your task is to initialize two strings and check if the second is a part of the first" << endl;
-        cout << "=====================================================================" << endl;
+        cout << "This level's topic is about the function swap()." << endl; Sleep(900);
+        cout << "Exchanges the content of the container by the content of str, which is another string object.Lengths may differ." << endl; Sleep(1000);
+        cout << "After the call to this member function, the value of this object is the value str had before the call, and the value of str" << endl; Sleep(1000);
+        cout << "is the value this object had before the call." << endl; Sleep(800);
+        cout << "Notice that a non - member function exists with the same name, swap, overloading that algorithm with an optimization that behaves like this member function." << endl; Sleep(1000);
+        cout << "Your task is to write the syntax of a member function that will swap two strings" << endl; Sleep(1000);
+        cout << "IMPORTANT! The first string goes by the name str1 and the second goes by str2" << endl; Sleep(1000);
+        cout << "=====================================================================" << endl; Sleep(1000);
         cout << playerName << ":" << endl;
         getline(cin, str1);
-        getline(cin, str2);
-        if (str1.find(str2) != string::npos)
+        if (isNumber(str1) == 0 && str1.find("string") != string::npos && str1.find(';') != string::npos && str1.find(".swap(str1, str2)") != string::npos)
         {
-            cout << "Good job, let's countinue to the next level." << endl;
-            system("CLS");
+            ready();
         }
         else
         {
-            cout << "Try again!" << endl;
+            cout << "Try again!" << endl; Sleep(2000);
+            system("CLS");
+            level3();
         }
     }
     else
@@ -312,6 +309,8 @@ void level4()
 {
     if (levelProgression >= 3)
     {
+        system("CLS");
+        string guess;
         cout << "          ,%                                                   %*           .@@&" << endl;
         cout << "         @@@                                                 *@@,         @@@@@" << endl;
         cout << "        @@@.            (@@@@@    #@%     %@#    %@@@@%     .@@#        %@@ (@@" << endl;
@@ -323,17 +322,29 @@ void level4()
         cout << endl;
         cout << "Stringgar:" << endl;
         cout << endl;
-        cout << "=====================================================================" << endl;
-        cout << playerName << " you learn stuff with amazing speed!" << endl;
-        cout << "This level is about the length of a string." << endl;
+        cout << "=====================================================================" << endl; Sleep(1000);
+        cout << playerName << " you learn stuff with amazing speed!" << endl; Sleep(800);
+        cout << "This level is about the length of a string." << endl; Sleep(800);
         cout << "Every string has a length.Even an empty string(containing no characters at all)" << endl;
-        cout << "has a length of zero.It's obvious that at some point we may want to know how long a particular string is." << endl;
-        cout << "This information is provided by two twin member functions.Their names are different, but their behaviours are identical.We can say that these functions are synonyms." << endl;
-        cout << "Their informal prototypes look like these:" << endl;
-        cout << "int string_size = S.size();" << endl;
-        cout << "int string_length = S.length();" << endl;
-
-        cout << "=====================================================================" << endl;
+        cout << "has a length of zero.It's obvious that at some point we may want to know how long a particular string is." << endl; Sleep(900);
+        cout << "This information is provided by two twin member functions.Their names are different, but their behaviours are identical.We can say that these functions are synonyms." << endl; Sleep(1500);
+        cout << "Their informal prototypes look like these:" << endl; Sleep(800);
+        cout << "int string_size = S.size();" << endl; Sleep(800);
+        cout << "int string_length = S.length();" << endl; Sleep(800);
+        cout << "To continue to the next level, you'll have to type the syntax of the member function .size()" << endl; Sleep(1000);
+        cout << "=====================================================================" << endl; Sleep(1000);
+        cout << playerName << ":" << endl;
+        getline(cin, guess);
+        if (isNumber(guess) == 0 && guess.find("string") != string::npos && guess.find(';') != string::npos && guess.find(".size()") != string::npos)
+        {
+            ready();
+        }
+        else
+        {
+            cout << "Try again!" << endl; Sleep(2000);
+            system("CLS");
+            level4();
+        }
     }
     else
     {
@@ -345,6 +356,8 @@ void level5()
 {
     if (levelProgression >= 4)
     {
+        system("CLS");
+        string ans;
         cout << "         ,%                                                 %*               @@@@@@@@#" << endl;
         cout << "        @@@                                               *@@,             (@@" << endl;
         cout << "       @@@.           (@@@@@    #@%     %@#    %@@@@%    .@@#             @@@@@@@@&" << endl;
@@ -356,15 +369,28 @@ void level5()
         cout << endl;
         cout << "Stringgar:" << endl;
         cout << endl;
-        cout << "=====================================================================" << endl;
-        cout << "Wow " << playerName << " you're learning pretty fast. Amazing job!" << endl;
-        cout << "This level is about string::npos. I think it will be a piece of cake, so let't start." << endl;
-        cout << "String::npos is the maximum value for size_t" << endl;
-        cout << "npos is a static member constant value with the greatest possible value for an element of type size_t." << endl;
-        cout << "This value, when used as the value for a len(or sublen) parameter in string's member functions, means until the end of the string." << endl;
-        cout << "As a return value, it is usually used to indicate no matches." << endl;
-        cout << "This constant is defined with a value of - 1, which because size_t is an unsigned integral type, it is the largest possible representable value for this type." << endl;
-        cout << "=====================================================================" << endl;
+        cout << "=====================================================================" << endl; Sleep(1000);
+        cout << "Wow " << playerName << " you're learning pretty fast. Amazing job!" << endl; Sleep(1000);
+        cout << "This level is about string::npos. I think it will be a piece of cake, so let't start." << endl; Sleep(1000);
+        cout << "String::npos is the maximum value for size_t" << endl; Sleep(1000);
+        cout << "npos is a static member constant value with the greatest possible value for an element of type size_t." << endl; Sleep(1000);
+        cout << "This value, when used as the value for a len(or sublen) parameter in string's member functions, means until the end of the string." << endl; Sleep(1000);
+        cout << "As a return value, it is usually used to indicate no matches." << endl; Sleep(1000);
+        cout << "This constant is defined with a value of - 1, which because size_t is an unsigned integral type, it is the largest possible representable value for this type." << endl; Sleep(1300);
+        cout << "To continue to your last task you'll just have to type the maximum value for size_t" << endl; Sleep(1000);
+        cout << "=====================================================================" << endl; Sleep(1000);
+        cout << playerName << ":" << endl;
+        getline(cin, ans);
+        if (ans.find(';') != string::npos && ans.find("string") != string::npos && ans.find("::npos") != string::npos)
+        {
+            ready();
+        }
+        else
+        {
+            cout << "Try again!" << endl; Sleep(2000);
+            system("CLS");
+            level5();
+        }
     }
     else
     {
