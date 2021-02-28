@@ -9,7 +9,7 @@
 
 - Viktor Kirov <VRKirov19@codingburgas.bg> - Front-End Developer
 
-- Maksimiliyan Dimov <VMDimitrov20@codingburgas.bg> - Quality Engineer
+- Maksimiliyan Dimov <MKDimov19@codingburgas.bg> - Quality Engineer
 
 - Dimitur Dimitrov <DSDimitrov19@codingburgas.bg> - Code Check
 
@@ -29,6 +29,9 @@ We are **TYPHON**. The task is to create c++ application with the theme being "S
 <img src="images/mainmenu.png">
 
 ## •Level Menu
+<img src="images/unknown.png">
+
+## •Level Selector
 <img src="images/levelmenu.png">
 
 ## •This displays if you open a level and it isn't unlocked yet
