@@ -20,3 +20,18 @@ We are **TYPHON**. The task is to create c++ application with the theme being "S
 * [Presentation](#)
 * [Documentation](#)
 
+# Pictures of final product
+
+## •Introduction
+<img src="images/introduction.png">
+
+## •Main Menu
+<img src="images/mainmenu.png">
+
+## •Level Menu
+<img src="images/levelmenu.png">
+
+## •This displays if you open a level and it isn't unlocked yet
+<img src="images/locked.png">
+
+
