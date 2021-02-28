@@ -407,7 +407,44 @@ void credits()
             Set[0] = 15;
 
             color(Set[0]);
-            // Viksa TUKA
+            cout << "	    ___    ___    ___    ___    _  _____  ___   " << endl;
+            cout << "	   (  _`\ |  _`\ (  _`\ (  _`\ (_)(_   _)(  _`\ " << endl;
+            cout << "	   | ( (_)| (_) )| (_(_)| | ) || |  | |  | (_(_)" << endl;
+            cout << "	   | |  _ | ,  / |  _)_ | | | )| |  | |  `\__ \ " << endl;
+            cout << "	   | (_( )| |\ \ | (_( )| |_) || |  | |  ( )_) |" << endl;
+            cout << "	   (____/'(_) (_)(____/'(____/'(_)  (_)  `\____)" << endl; Sleep(1000);
+
+            cout << "===================================================================" << endl;
+            cout << "===================================================================" << endl; Sleep(900);
+
+
+            cout << "     PRODUCTION COMPANY presents  Stringgar STUDIO " << endl; Sleep(900);
+            cout << " a PRODUCTION COMPANY production  Stringgar " << endl; Sleep(900);
+            cout << "		a FILMMAKER film  Stringgar " << endl; Sleep(900);
+            cout << "		      Film Title  Magic Wizards " << endl; Sleep(900);
+            cout << "		       Lead Cast  Stringgar " << endl; Sleep(900);
+            cout << "	         Supporting Cast  Stringgar " << endl; Sleep(900);
+            cout << " 		Casting Director  Stringgar " << endl; Sleep(900);
+            cout << " 		  Music Composer  Stringgar " << endl; Sleep(900);
+            cout << " 		Costume Designer  Stringgar " << endl; Sleep(900);
+            cout << "	     Associate Producers  Stringgar " << endl; Sleep(900);
+            cout << " 			 Editors  Stringgar " << endl; Sleep(900);
+            cout << "	     Production Designer  Stringgar " << endl; Sleep(900);
+            cout << "	 Director of Photography  Stringgar " << endl; Sleep(900);
+            cout << "	      Executive Producer  Stringgar " << endl; Sleep(900);
+            cout << "			Producer  Stringgar " << endl; Sleep(900);
+            cout << "			 Writers  Stringgar " << endl; Sleep(900);
+            cout << "			Director  Stringgar " << endl; Sleep(900);
+            cout << endl; Sleep(500);
+            cout << "		  The ones that delivered the snacks " << endl;
+            cout << endl; Sleep(500);
+            cout << "	       Georgi Dryanovski - Scrum Trainer " << endl; Sleep(1000);
+            cout << "		   Ivan Mihaylov - Back-End Developer " << endl; Sleep(1000);
+            cout << "		    Viktor Kirov - Front-End Developer " << endl; Sleep(1000);
+            cout << "	      Maksimiliyan Dimov - Quality Engineer " << endl; Sleep(1000);
+            cout << "		Dimitur Dimitrov - Code Check " << endl; Sleep(1000);
+            cout << endl; Sleep(500);
+            cout << "				End " << endl;
         }
         else
         {
