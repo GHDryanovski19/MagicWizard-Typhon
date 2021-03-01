@@ -8,6 +8,8 @@
 
 using namespace std;
 
+int lastPlayedLevel = 1;
+
 int mainMenu();
 void levelMenu();
 
@@ -25,19 +27,19 @@ void levelMenuSelector()
 
     for (int i = 0;;)
     {
-        gotoxy(24, 12); color(Set[0]); cout << "1. Level 1 ";
+        gotoxy(30, 12); color(Set[0]); cout << "1. Level 1 ";
 
-        gotoxy(24, 13); color(Set[1]); cout << "2. Level 2";
+        gotoxy(30, 13); color(Set[1]); cout << "2. Level 2";
 
-        gotoxy(24, 14); color(Set[2]); cout << "3. Level 3 ";
+        gotoxy(30, 14); color(Set[2]); cout << "3. Level 3 ";
 
-        gotoxy(24, 15); color(Set[3]); cout << "4. Level 4 ";
+        gotoxy(30, 15); color(Set[3]); cout << "4. Level 4 ";
 
-        gotoxy(24, 16); color(Set[4]); cout << "5. Level 5 ";
+        gotoxy(30, 16); color(Set[4]); cout << "5. Level 5 ";
 
-        gotoxy(24, 17); color(Set[5]); cout << "6. Mystery ";
+        gotoxy(30, 17); color(Set[5]); cout << "6. Mystery ";
 
-        gotoxy(24, 18); color(Set[6]); cout << "7. Go Back ";
+        gotoxy(30, 18); color(Set[6]); cout << "7. Go Back ";
 
         key = _getch();
 
@@ -53,36 +55,42 @@ void levelMenuSelector()
         {
             if (counter == 1)
             {
+                lastPlayedLevel = 1;
                 system("CLS");
                 level1();
                 break;
             }
             if (counter == 2)
             {
+                lastPlayedLevel = 2;
                 system("CLS");
                 level2();
                 break;
             }
             if (counter == 3)
             {
+                lastPlayedLevel = 3;
                 system("CLS");
                 level3();
                 break;
             }
             if (counter == 4)
             {
+                lastPlayedLevel = 4;
                 system("CLS");
                 level4();
                 break;
             }
             if (counter == 5)
             {
+                lastPlayedLevel = 5;
                 system("CLS");
                 level5();
                 break;
             }
             if (counter == 6)
             {
+                lastPlayedLevel = 6;
                 system("CLS");
                 credits();
                 break;
@@ -125,11 +133,11 @@ void levelMenu()
 
     for (int i = 0;;)
     {
-        gotoxy(24, 12); color(Set[0]); cout << "1. Your last level ";
+        gotoxy(30, 12); color(Set[0]); cout << "1. Your last level ";
 
-        gotoxy(24, 13); color(Set[1]); cout << "2. Choose wich level";
+        gotoxy(30, 13); color(Set[1]); cout << "2. Choose wich level";
 
-        gotoxy(24, 14); color(Set[2]); cout << "3. Go Back ";
+        gotoxy(30, 14); color(Set[2]); cout << "3. Go Back ";
 
         key = _getch();
 
@@ -146,7 +154,33 @@ void levelMenu()
             if (counter == 1)
             {
                 system("CLS");
-                level1();
+                switch (lastPlayedLevel)
+                {
+                    case 1:
+                    {
+                        level1(); break;
+                    }
+                    case 2:
+                    {
+                        level2(); break;
+                    }
+                    case 3:
+                    {
+                        level3(); break;
+                    }
+                    case 4:
+                    {
+                        level4(); break;
+                    }
+                    case 5:
+                    {
+                        level5(); break;
+                    }
+                    case 6:
+                    {
+                        credits(); break;
+                    }
+                }
                 break;
             }
             if (counter == 2)
@@ -186,11 +220,11 @@ int mainMenu()
 
     for (int i = 0;;)
     {
-        gotoxy(24, 12); color(Set[0]); cout << "1. Start your new adventure ";
+        gotoxy(30, 12); color(Set[0]); cout << "1. Start your new adventure ";
 
-        gotoxy(24, 13); color(Set[1]); cout << "2. Levels ";
+        gotoxy(30, 13); color(Set[1]); cout << "2. Levels ";
 
-        gotoxy(24, 14); color(Set[2]); cout << "3. Exit ";
+        gotoxy(30, 14); color(Set[2]); cout << "3. Exit ";
 
         key = _getch();
 

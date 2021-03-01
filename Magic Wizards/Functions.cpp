@@ -57,11 +57,15 @@ void introduction()
     cout << "                                My name is ";
     getline(cin, playerName);
     cout << endl;
-    cout << "                        Lets get you right into it!"; Sleep(1000);
 
-    if (playerName == "admin")
+    if (playerName == "Stringgar")
     {
+        cout << "                    What a beautiful name let me get you started!"; Sleep(1000);
         levelProgression = 999;
+    }
+    else
+    {
+        cout << "                        Lets get you right into it!"; Sleep(1000);
     }
 
     system("CLS");
@@ -101,6 +105,8 @@ void art()
 
 // ------------------------------- Main Menu ------------------------------- //
 
+// ---------------------------- Level Functions ---------------------------- //
+
 //Checks if a variable is an integer or string
 bool isNumber(string s)
 {
@@ -128,11 +134,6 @@ void ready()
 
     if (playerState == "ready")
     {
-        if (levelProgression < 1)
-        {
-            levelProgression = levelProgression + 1;
-            status = "New level unlocked!";
-        }
         system("CLS");
         mainMenu();
     }
@@ -161,6 +162,10 @@ void locked()
     system("CLS");
     levelMenuSelector();
 }
+
+// ---------------------------- Level Functions ---------------------------- //
+
+// -------------------------------- Levels --------------------------------- //
 
 void level1()
 {
@@ -197,6 +202,11 @@ void level1()
     if (isNumber(str) == 0 && str.find("string") != string::npos && str.find(';') != string::npos)
     {
         ready();
+        if (levelProgression < 1)
+        {
+            levelProgression = levelProgression + 1;
+            status = "Level 2 Unlocked!";
+        }
     }
     else
     {
@@ -241,9 +251,14 @@ void level2()
         cout << "=====================================================================" << endl; Sleep(1000);
         cout << playerName << ":" << endl;
         getline(cin, answer);
-        if (isNumber(answer) == 0 && answer.find("string") != string::npos && answer.find(';') != string::npos && answer.find(".insert(3, \"magic\")") != string::npos)
+        if (isNumber(answer) == 0 && answer.find(';') != string::npos && answer.find(".insert(3, \"magic\")") != string::npos)
         {
             ready();
+            if (levelProgression < 2)
+            {
+                levelProgression = levelProgression + 1;
+                status = "Level 3 Unlocked!";
+            }
         }
         else
         {
@@ -288,9 +303,14 @@ void level3()
         cout << "=====================================================================" << endl; Sleep(1000);
         cout << playerName << ":" << endl;
         getline(cin, str1);
-        if (isNumber(str1) == 0 && str1.find("string") != string::npos && str1.find(';') != string::npos && str1.find(".swap(str1, str2)") != string::npos)
+        if (isNumber(str1) == 0 && str1.find(';') != string::npos && str1.find(".swap(str1, str2)") != string::npos)
         {
             ready();
+            if (levelProgression < 3)
+            {
+                levelProgression = levelProgression + 1;
+                status = "Level 4 Unlocked!";
+            }
         }
         else
         {
@@ -335,9 +355,14 @@ void level4()
         cout << "=====================================================================" << endl; Sleep(1000);
         cout << playerName << ":" << endl;
         getline(cin, guess);
-        if (isNumber(guess) == 0 && guess.find("string") != string::npos && guess.find(';') != string::npos && guess.find(".size()") != string::npos)
+        if (isNumber(guess) == 0 && guess.find(';') != string::npos && guess.find(".size()") != string::npos)
         {
             ready();
+            if (levelProgression < 4)
+            {
+                levelProgression = levelProgression + 1;
+                status = "Level 5 Unlocked";
+            }
         }
         else
         {
@@ -384,6 +409,11 @@ void level5()
         if (ans.find(';') != string::npos && ans.find("string") != string::npos && ans.find("::npos") != string::npos)
         {
             ready();
+            if (levelProgression < 5)
+            {
+                levelProgression = levelProgression + 1;
+                status = "Mystery Level Unlocked";
+            }
         }
         else
         {
@@ -421,6 +451,12 @@ void credits()
 
         string magicWord;
         color(Set[0]);
+        cout << playerName << " you are given a power string. Your task is to append the reversed version of the string." << endl;
+        cout << "There is something else you will need to do too: You need to insert the message ' cigaM ehT' at the end of the string before you reverse it!" << endl;
+        cout << "When you've accomplised that type 'erehwyreve si' as your input and with the output you will be able to unlock the mystery level." << endl;
+        cout << "Keep in mind that the key to the level must be in camel keys which means for example:" << endl;
+        cout << "Stringgar likes to eat pankakes. " << "should be" << "stringgarLikesToEatPankakes." << endl;
+        cout << endl;
         cout << "Enter the Magic Word in camel keys: ";
         cin >> magicWord;
 
@@ -434,11 +470,11 @@ void credits()
 
             color(Set[0]);
             cout << "	    ___    ___    ___    ___    _  _____  ___   " << endl;
-            cout << "	   (  _`\ |  _`\ (  _`\ (  _`\ (_)(_   _)(  _`\ " << endl;
+            cout << "	   (  _`L |  _`L (  _`L (  _`L (_)(_   _)(  _`L " << endl;
             cout << "	   | ( (_)| (_) )| (_(_)| | ) || |  | |  | (_(_)" << endl;
-            cout << "	   | |  _ | ,  / |  _)_ | | | )| |  | |  `\__ \ " << endl;
-            cout << "	   | (_( )| |\ \ | (_( )| |_) || |  | |  ( )_) |" << endl;
-            cout << "	   (____/'(_) (_)(____/'(____/'(_)  (_)  `\____)" << endl; Sleep(1000);
+            cout << "	   | |  _ | ,  / |  _)_ | | | )| |  | |  `L__ L " << endl;
+            cout << "	   | (_( )| |L L | (_( )| |_) || |  | |  ( )_) |" << endl;
+            cout << "	   (____/'(_) (_)(____/'(____/'(_)  (_)  `L____)" << endl; Sleep(1000);
 
             cout << "===================================================================" << endl;
             cout << "===================================================================" << endl; Sleep(900);
@@ -470,7 +506,11 @@ void credits()
             cout << "	      Maksimiliyan Dimov - Quality Engineer " << endl; Sleep(1000);
             cout << "		Dimitur Dimitrov - Code Check " << endl; Sleep(1000);
             cout << endl; Sleep(500);
-            cout << "				End " << endl;
+            cout << "				End " << endl; Sleep(3000);
+
+            system("CLS");
+            status = "Congratulations you've completed every level!";
+            mainMenu();
         }
         else
         {
@@ -480,6 +520,8 @@ void credits()
     else
     {
         locked();
+
     }
 }
 
+// -------------------------------- Levels --------------------------------- //
