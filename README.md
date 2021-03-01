@@ -15,10 +15,10 @@
 
 # Resume of the Project
 
-We are **TYPHON**. The task is to create c++ application with the theme being "Strings".
+We are team **TYPHON**. The task is to create a game using strings. We had a month to complete the task. The only language we were able to use was C++. Our goal was to create an educational game which helps the user learn how to use strings. We got along with the goal and did a pretty good job for the given time.
 
-* [Presentation](#)
-* [Documentation](#)
+* [Presentation](https://1drv.ms/p/s!BGfEvyCNrilpqk9vO_X1H98xJX99?e=82MMI9)
+* [Documentation](https://codingburgas-my.sharepoint.com/:w:/g/personal/mkdimov19_codingburgas_bg/EcmURY5ZGQpGrh9PLd1KleMBGvPs64lD0F_5vWqH9eLeUQ?e=b1Q3VT)
 
 # Pictures of final product
 
