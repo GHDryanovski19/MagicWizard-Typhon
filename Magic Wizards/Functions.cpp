@@ -12,7 +12,7 @@ string playerName;
 
 string status = "No new messages";
 
-int levelProgression;
+int levelProgression = 0;
 
 void introduction()
 {
@@ -75,7 +75,12 @@ void introduction()
 
 void color(int color)
 {
-    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
+    if(STD_OUTPUT_HANDLE)
+    {
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
+    }
+    else
+    { }
 }
 
 void gotoxy(int x, int y)
@@ -167,11 +172,43 @@ void locked()
 
 // -------------------------------- Levels --------------------------------- //
 
+void startKeyFunction()
+{
+    int Set[] = { 11, 11, 11, 11 };
+
+    color(Set[0]);
+    cout << "Press 'Enter' to start the level or 'Backspace' to go back." << endl;
+
+    char startKey;
+    startKey = _getch();  
+
+    if (startKey == '\r')
+    {
+        color(Set[1]);
+        cout << "Starting . . ."; Sleep(1000);
+        system("CLS");
+    }
+    else if (startKey == '\b')
+    {
+        color(Set[2]);
+        cout << "Going back . . ."; Sleep(1000);
+        system("CLS");
+        levelMenuSelector();
+    }
+    else
+    {
+        color(Set[3]);
+        cout << "Invalid key pressed please try again!"; Sleep(500);
+        system("CLS");
+        startKeyFunction();
+    }
+}
+
 void level1()
 {
     system("CLS");
     string str;
-
+    startKeyFunction();
     cout << "         ,%                                                 %*               " << endl;
     cout << "        @@@                                               *@@,           ,@@@" << endl;
     cout << "       @@@.           (@@@@@    #@%     %@#    %@@@@%    .@@#        @@@@/@@/" << endl;
@@ -193,7 +230,6 @@ void level1()
     cout << "And to initalize it, you have to type getline(cin, the name of the string). Okay let's try it." << endl; Sleep(300);
     cout << "=====================================================================" << endl; Sleep(1000);
     cout << playerName << ":" << endl;
-
     getline(cin, str);
 
     cout << "Stringgar:" << endl;
@@ -201,12 +237,12 @@ void level1()
 
     if (isNumber(str) == 0 && str.find("string") != string::npos && str.find(';') != string::npos)
     {
-        ready();
         if (levelProgression < 1)
         {
             levelProgression = levelProgression + 1;
             status = "Level 2 Unlocked!";
         }
+        ready();
     }
     else
     {
@@ -253,12 +289,12 @@ void level2()
         getline(cin, answer);
         if (isNumber(answer) == 0 && answer.find(';') != string::npos && answer.find(".insert(3, \"magic\")") != string::npos)
         {
-            ready();
             if (levelProgression < 2)
             {
                 levelProgression = levelProgression + 1;
                 status = "Level 3 Unlocked!";
             }
+            ready();
         }
         else
         {
@@ -305,12 +341,12 @@ void level3()
         getline(cin, str1);
         if (isNumber(str1) == 0 && str1.find(';') != string::npos && str1.find(".swap(str1, str2)") != string::npos)
         {
-            ready();
             if (levelProgression < 3)
             {
                 levelProgression = levelProgression + 1;
                 status = "Level 4 Unlocked!";
             }
+            ready();
         }
         else
         {
@@ -357,12 +393,12 @@ void level4()
         getline(cin, guess);
         if (isNumber(guess) == 0 && guess.find(';') != string::npos && guess.find(".size()") != string::npos)
         {
-            ready();
             if (levelProgression < 4)
             {
                 levelProgression = levelProgression + 1;
                 status = "Level 5 Unlocked";
             }
+            ready();
         }
         else
         {
@@ -408,12 +444,12 @@ void level5()
         getline(cin, ans);
         if (ans.find(';') != string::npos && ans.find("string") != string::npos && ans.find("::npos") != string::npos)
         {
-            ready();
             if (levelProgression < 5)
             {
                 levelProgression = levelProgression + 1;
                 status = "Mystery Level Unlocked";
             }
+            ready();
         }
         else
         {

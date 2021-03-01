@@ -20,6 +20,8 @@ void levelMenu();
 
 void levelMenuSelector();
 
+void startKeyFunction();
+
 void locked();
 
 void level1();
