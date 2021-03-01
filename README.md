@@ -37,4 +37,6 @@ We are team **TYPHON**. The task is to create a game using strings. We had a mon
 ## •This displays if you open a level and it isn't unlocked yet
 <img src="images/locked.png">
 
+# Download
 
+- If you wish to try the game yourself you can do that by clicking the [link](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GHDryanovski19/MagicWizard-Typhon).
